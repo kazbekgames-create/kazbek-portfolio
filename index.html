@@ -4,6 +4,410 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
+    <title>Казбек — Senior Frontend Developer</title>
+    <meta
+      name="description"
+      content="Профессиональный сайт-визитка: Казбек — Senior Frontend Developer. Навыки, проекты и контакты."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand__mark" aria-hidden="true">KZ</span>
+          <span class="brand__text">Kazbek</span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="nav__toggle-icon" aria-hidden="true"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+
+          <ul class="nav__menu" id="nav-menu">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <div class="kicker">
+              <span class="kicker__dot" aria-hidden="true"></span>
+              <span class="kicker__text">Premium UI • Performance • Accessibility</span>
+            </div>
+
+            <h1 class="hero__title">
+              Казбек
+              <span class="hero__role">Senior Frontend Developer</span>
+            </h1>
+
+            <p class="hero__lead">
+              Проектирую и реализую интерфейсы уровня продукта: чистая архитектура, быстрый рендер,
+              безупречная типографика и детали, которые ощущаются “дорого”.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact" data-cta="contact">Let’s talk</a>
+              <a class="btn btn--ghost" href="#projects">View projects</a>
+            </div>
+
+            <div class="hero__highlights">
+              <div class="mini-card">
+                <div class="mini-card__label">Focus</div>
+                <div class="mini-card__value">Design Systems • Motion • DX</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card__label">Approach</div>
+                <div class="mini-card__value">Clarity → Consistency → Craft</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" aria-hidden="true">
+            <div class="backdrop">
+              <div class="backdrop__orb backdrop__orb--a"></div>
+              <div class="backdrop__orb backdrop__orb--b"></div>
+              <div class="backdrop__orb backdrop__orb--c"></div>
+            </div>
+
+            <div class="glass hero-card" data-tilt>
+              <div class="hero-card__top">
+                <div class="pill">UI Engineering</div>
+                <div class="pill pill--muted">Senior</div>
+              </div>
+              <div class="hero-card__mid">
+                <div class="metric">
+                  <div class="metric__k">Quality</div>
+                  <div class="metric__v">Premium</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__k">Motion</div>
+                  <div class="metric__v">Subtle</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__k">UX</div>
+                  <div class="metric__v">Intentional</div>
+                </div>
+              </div>
+              <div class="hero-card__bottom">
+                <div class="spark"></div>
+                <div class="spark spark--wide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle">2–3 предложения — максимум смысла, минимум воды.</p>
+          </header>
+
+          <div class="about">
+            <div class="glass about__card reveal">
+              <p class="about__text">
+                Я — frontend разработчик, который любит “чистые” интерфейсы и системный подход.
+                Прорабатываю UX, делаю адаптив, уделяю внимание доступности и перформансу. Ценю
+                читаемость кода и предсказуемость результата.
+              </p>
+            </div>
+            <div class="about__side reveal">
+              <div class="glass about__chip">
+                <div class="about__chip-k">Principles</div>
+                <div class="about__chip-v">Consistency • Clarity • Craft</div>
+              </div>
+              <div class="glass about__chip">
+                <div class="about__chip-k">Workflow</div>
+                <div class="about__chip-v">Figma → Build → Polish</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__subtitle">Карточки с иконками и аккуратными hover‑состояниями.</p>
+          </header>
+
+          <div class="grid grid--skills">
+            <article class="glass skill reveal">
+              <div class="skill__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 4h16v16H4V4Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 8h8M8 12h5M8 16h7"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="skill__body">
+                <h3 class="skill__title">HTML</h3>
+                <p class="skill__text">Семантика, структура, доступность.</p>
+              </div>
+            </article>
+
+            <article class="glass skill reveal">
+              <div class="skill__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 4h10l-1 16-4 1-4-1L7 4Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 8h6M9 12h6M9 16h5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="skill__body">
+                <h3 class="skill__title">CSS</h3>
+                <p class="skill__text">Сетки, дизайн‑токены, glass, motion.</p>
+              </div>
+            </article>
+
+            <article class="glass skill reveal">
+              <div class="skill__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 8h10M7 12h6M7 16h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v13A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-13Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="skill__body">
+                <h3 class="skill__title">JavaScript</h3>
+                <p class="skill__text">Интерактив, события, оптимизация.</p>
+              </div>
+            </article>
+
+            <article class="glass skill reveal">
+              <div class="skill__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 7h10v10H7V7Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 10h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M10 7v10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="skill__body">
+                <h3 class="skill__title">Git</h3>
+                <p class="skill__text">История, ветки, код‑ревью, релизы.</p>
+              </div>
+            </article>
+
+            <article class="glass skill reveal">
+              <div class="skill__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 4c4.4 0 8 2.9 8 6.5S16.4 17 12 17s-8-2.9-8-6.5S7.6 4 12 4Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 20c1.4-1.9 2.8-3 4-3s2.6 1.1 4 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="skill__body">
+                <h3 class="skill__title">Figma</h3>
+                <p class="skill__text">Понимаю дизайн и переношу в код.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__subtitle">3 карточки с красивым hover‑эффектом.</p>
+          </header>
+
+          <div class="grid grid--projects">
+            <article class="glass project reveal" data-tilt>
+              <div class="project__top">
+                <div class="project__badge">01</div>
+                <div class="project__tags">
+                  <span class="tag">Landing</span>
+                  <span class="tag tag--muted">UI</span>
+                </div>
+              </div>
+              <h3 class="project__title">Premium landing</h3>
+              <p class="project__text">
+                Дизайн‑система, “дорогая” типографика, адаптив и микровзаимодействия.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Demo</a>
+                <a class="link" href="#" aria-disabled="true">Code</a>
+              </div>
+              <div class="project__shine" aria-hidden="true"></div>
+            </article>
+
+            <article class="glass project reveal" data-tilt>
+              <div class="project__top">
+                <div class="project__badge">02</div>
+                <div class="project__tags">
+                  <span class="tag">Components</span>
+                  <span class="tag tag--muted">CSS</span>
+                </div>
+              </div>
+              <h3 class="project__title">UI kit</h3>
+              <p class="project__text">
+                Набор компонентов в едином стиле: состояния, фокус, доступность.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Demo</a>
+                <a class="link" href="#" aria-disabled="true">Code</a>
+              </div>
+              <div class="project__shine" aria-hidden="true"></div>
+            </article>
+
+            <article class="glass project reveal" data-tilt>
+              <div class="project__top">
+                <div class="project__badge">03</div>
+                <div class="project__tags">
+                  <span class="tag">Motion</span>
+                  <span class="tag tag--muted">JS</span>
+                </div>
+              </div>
+              <h3 class="project__title">Interactive mini‑app</h3>
+              <p class="project__text">
+                Чистый JavaScript, состояние и плавные переходы 0.3–0.5s.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Demo</a>
+                <a class="link" href="#" aria-disabled="true">Code</a>
+              </div>
+              <div class="project__shine" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <header class="section__head reveal">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">Telegram, email и кнопка — без лишних форм.</p>
+          </header>
+
+          <div class="contact">
+            <div class="glass contact__card reveal">
+              <div class="contact__row">
+                <div class="contact__label">Telegram</div>
+                <a class="contact__value" href="https://t.me/" target="_blank" rel="noreferrer"
+                  >@your_username</a
+                >
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">Email</div>
+                <a class="contact__value" href="mailto:example@mail.com">example@mail.com</a>
+              </div>
+
+              <div class="contact__actions">
+                <a class="btn btn--primary" href="mailto:example@mail.com">Send email</a>
+                <a class="btn btn--ghost" href="https://t.me/" target="_blank" rel="noreferrer"
+                  >Open Telegram</a
+                >
+              </div>
+            </div>
+
+            <div class="contact__aside reveal">
+              <div class="glass contact__note">
+                <div class="contact__note-title">Быстрый ответ</div>
+                <p class="contact__note-text">
+                  Обычно отвечаю в течение дня. Можно написать кратко: “Привет, есть задача…”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">Kazbek</div>
+          <div class="footer__meta">© <span id="year"></span> • HTML / CSS / JS</div>
+        </div>
+        <a class="footer__top" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
     <title>Казбек — Junior Frontend Developer</title>
     <meta
       name="description"
