@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Казбек — Junior Frontend Developer</title>
+    <meta
+      name="description"
+      content="Сайт-визитка Казбека — Junior Frontend Developer. Навыки, проекты и контакты."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">KZ</span>
+          <span class="brand-text">Kazbek</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a class="nav-link" href="#about">Обо мне</a></li>
+            <li><a class="nav-link" href="#skills">Навыки</a></li>
+            <li><a class="nav-link" href="#projects">Проекты</a></li>
+            <li><a class="nav-link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Доступен для стажировки / пет‑проектов
+            </p>
+            <h1 class="hero-title">
+              Казбек
+              <span class="hero-subtitle">Junior Frontend Developer</span>
+            </h1>
+            <p class="hero-lead">
+              Делаю аккуратные интерфейсы, которые приятно выглядят, быстро работают и хорошо
+              адаптируются под телефон.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contacts" data-scroll="contacts">
+                Связаться со мной
+              </a>
+              <a class="btn btn-ghost" href="#projects">Смотреть проекты</a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-card">
+                <div class="meta-label">Фокус</div>
+                <div class="meta-value">UI • Адаптив • Анимации</div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-label">Стек</div>
+                <div class="meta-value">HTML • CSS • JS</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="glass-card">
+              <div class="glass-top">
+                <span class="pill">Frontend</span>
+                <span class="pill pill-muted">Junior</span>
+              </div>
+              <div class="glass-lines">
+                <div class="line w-80"></div>
+                <div class="line w-60"></div>
+                <div class="line w-90"></div>
+              </div>
+              <div class="glass-footer">
+                <div class="chip"></div>
+                <div class="chip chip-wide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Обо мне</h2>
+            <p class="section-subtitle">
+              Коротко — кто я и что мне интересно в разработке.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card reveal">
+              <p class="about-text">
+                Изучаю frontend разработку, люблю создавать красивые и удобные сайты
+              </p>
+              <div class="about-badges">
+                <span class="badge">Аккуратная верстка</span>
+                <span class="badge">Компонентный подход</span>
+                <span class="badge">Чистый CSS</span>
+              </div>
+            </div>
+
+            <div class="stats reveal">
+              <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Навыков в фокусе</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Проекта в портфолио</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">∞</div>
+                <div class="stat-label">Желания развиваться</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Навыки</h2>
+            <p class="section-subtitle">
+              То, с чем работаю сейчас и прокачиваю каждый день.
+            </p>
+          </div>
+
+          <div class="chips reveal">
+            <span class="chip-skill">HTML</span>
+            <span class="chip-skill">CSS</span>
+            <span class="chip-skill">JavaScript</span>
+            <span class="chip-skill">Git</span>
+            <span class="chip-skill">Figma</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Проекты</h2>
+            <p class="section-subtitle">Примеры работ (можно заменить на реальные ссылки).</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon" aria-hidden="true">01</div>
+                <div class="project-tags">
+                  <span class="tag">Landing</span>
+                  <span class="tag tag-muted">CSS</span>
+                </div>
+              </div>
+              <h3 class="project-title">Лендинг продукта</h3>
+              <p class="project-text">
+                Современная посадочная страница с адаптивной сеткой, плавными эффектами и чистой
+                семантикой.
+              </p>
+              <div class="project-actions">
+                <a class="link" href="#" aria-disabled="true">Демо</a>
+                <a class="link" href="#" aria-disabled="true">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon" aria-hidden="true">02</div>
+                <div class="project-tags">
+                  <span class="tag">UI</span>
+                  <span class="tag tag-muted">Figma</span>
+                </div>
+              </div>
+              <h3 class="project-title">UI‑компоненты</h3>
+              <p class="project-text">
+                Набор карточек и кнопок в тёмной теме: hover‑состояния, фокус‑стили, доступность.
+              </p>
+              <div class="project-actions">
+                <a class="link" href="#" aria-disabled="true">Демо</a>
+                <a class="link" href="#" aria-disabled="true">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-icon" aria-hidden="true">03</div>
+                <div class="project-tags">
+                  <span class="tag">JS</span>
+                  <span class="tag tag-muted">Интерактив</span>
+                </div>
+              </div>
+              <h3 class="project-title">Мини‑приложение</h3>
+              <p class="project-text">
+                Небольшой проект на чистом JavaScript: состояние, события, локальные данные и
+                аккуратная анимация.
+              </p>
+              <div class="project-actions">
+                <a class="link" href="#" aria-disabled="true">Демо</a>
+                <a class="link" href="#" aria-disabled="true">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Контакты</h2>
+            <p class="section-subtitle">
+              Напишите — отвечу и с радостью обсудим проекты/стажировку.
+            </p>
+          </div>
+
+          <div class="contacts-grid">
+            <a class="contact-card reveal" href="https://t.me/" target="_blank" rel="noreferrer">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20.5 4.5 3.9 11.1c-1.1.4-1.1 1 0 1.4l3.7 1.2 1.4 4.2c.2.6.5.7 1 .3l2.1-2 4 2.9c.7.4 1.2.2 1.4-.7l3-13.7c.2-1.1-.4-1.6-1.4-1.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contact-body">
+                <div class="contact-title">Telegram</div>
+                <div class="contact-sub">Написать в Telegram</div>
+              </div>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="contact-card reveal" href="https://wa.me/" target="_blank" rel="noreferrer">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7.2 20.2 8 17.7a9 9 0 1 1 3.9 1.2c-1.5 0-2.9-.3-4.2-.9l-2.5.7Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 8.8c.2-.5.5-.6.9-.6h.7c.2 0 .5.1.6.4l.8 1.9c.1.3.1.5-.1.7l-.6.7c-.1.2-.1.4 0 .6.6 1.2 1.6 2.2 2.8 2.8.2.1.4.1.6 0l.7-.6c.2-.2.4-.2.7-.1l1.9.8c.3.1.4.4.4.6v.7c0 .4-.1.7-.6.9-.7.3-1.8.4-3.2 0-2.8-.8-5.8-3.8-6.6-6.6-.4-1.4-.3-2.5 0-3.2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contact-body">
+                <div class="contact-title">WhatsApp</div>
+                <div class="contact-sub">Написать в WhatsApp</div>
+              </div>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="contact-card reveal" href="mailto:example@mail.com">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4.5 7.5h15A2 2 0 0 1 21.5 9.5v9a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m4.8 8.1 6.6 6a1 1 0 0 0 1.2 0l6.6-6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contact-body">
+                <div class="contact-title">Email</div>
+                <div class="contact-sub">example@mail.com</div>
+              </div>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">Казбек</div>
+          <div class="footer-note">© <span id="year"></span> • Сделано на HTML/CSS/JS</div>
+        </div>
+        <a class="to-top" href="#top">Наверх ↑</a>
+      </div>
+    </footer>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
